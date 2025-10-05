@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Hero } from "@/components/Hero";
+import { SARExplanation } from "@/components/SARExplanation";
+import { ProblemStatement } from "@/components/ProblemStatement";
+import { InteractiveMap } from "@/components/InteractiveMap";
+import { AlertSimulator } from "@/components/AlertSimulator";
+import { Statistics } from "@/components/Statistics";
+import { DataComparison } from "@/components/DataComparison";
+import { ChatbotPlaceholder } from "@/components/ChatbotPlaceholder";
+import { Impact } from "@/components/Impact";
+import { Team } from "@/components/Team";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Hero />
+      <SARExplanation />
+      <ProblemStatement />
+      <InteractiveMap />
+      <AlertSimulator />
+      <Statistics />
+      <DataComparison />
+      <ChatbotPlaceholder />
+      <Impact />
+      <Team />
+      <Footer />
     </div>
   );
 };
